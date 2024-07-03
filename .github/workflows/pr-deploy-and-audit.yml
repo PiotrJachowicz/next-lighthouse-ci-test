@@ -3,6 +3,7 @@ on: [pull_request]
 jobs:
   deploy_and_audit:
     runs-on: ubuntu-latest
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
       - name: Vercel Action
