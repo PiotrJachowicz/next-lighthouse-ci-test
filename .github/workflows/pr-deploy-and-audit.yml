@@ -2,6 +2,7 @@ name: PR Deploy and Audit
 on: [pull_request]
 jobs:
     deploy_and_audit:
+    	permissions: write-all
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
